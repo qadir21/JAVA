@@ -22,5 +22,6 @@ public class VeriableBasic
         System.out.println(a);
         a = a / 3;
         System.out.println(a);
+        System.out.println(y % x);
     }
 }
