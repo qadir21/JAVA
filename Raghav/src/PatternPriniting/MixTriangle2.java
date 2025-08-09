@@ -2,24 +2,20 @@ package PatternPriniting;
 
 import java.util.Scanner;
 
-public class Pyramid2
+public class MixTriangle2
 {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter number of row: ");
         int row = input.nextInt();
-        for (int i = 0; i < row; i++)
+        for(int i = 0; i < row; i++)
         {
-            for (int j = 0; j < row - i - 1; j++)
+            for (int j = 1; j <= i + 1; j++)
             {
-                System.out.print("  ");
+                if(i % 2 != 0) System.out.print((char)('A' + j - 1) + " ");
+                else System.out.print(j + " ");
             }
-            for(int j = 0; j <= i; j++)
-            {
-                System.out.print("* ");
-            }
-            for(int j = 1; j <= i; j++) System.out.print("* ");
             System.out.println();
         }
     }
