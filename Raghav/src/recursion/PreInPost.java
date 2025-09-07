@@ -7,10 +7,10 @@ public class PreInPost {
 
     public static void pip(int n){
         if(n == 0) return;
-        System.out.print(n + " "); // pre
+        System.out.print("pre" + n + " "); // pre
         pip(n - 1);
-        System.out.print(n + " "); // in
+        System.out.print("in" + n + " "); // in
         pip(n - 1);
-        System.out.print(n + " "); // post
+        System.out.print("post" +  n + " "); // post
     }
 }
